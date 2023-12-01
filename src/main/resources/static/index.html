@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spring boot Chat app</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!--<div id="username_page">-->
+<!--    <div class="username-container">-->
+<!--        <h1 class="title">Enter your name</h1>-->
+<!--        <form id="username-Form" name="username">-->
+<!--            <div class="form-group">-->
+<!--                <input type="text" id="username" placeholder="username" autocomplete="off" class="form-control">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <button type="submit" class="submit username-submit">Start Chat</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div id="chat-page" class="hidden">-->
+<!--    <div class="chat-container">-->
+<!--    <div class="chat-leader">-->
+<!--        <h2>Chat:</h2>-->
+<!--    </div>-->
+<!--        <div class="connecting">Connecting...</div>-->
+<!--        <ul id="messageArea">-->
+
+<!--        </ul>-->
+<!--        <form id="messageForm" name="messageForm" nameForm="messageForm">-->
+<!--            <div class="form-group">-->
+<!--                <div class="input-group clearfix">-->
+<!--                    <input type="text">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+
+<!--</div>-->
+<div id="username-page">
+    <div class="username-page-container">
+        <h1 class="title">Enter your username to enter the chatroom</h1>
+        <form id="usernameForm" name="usernameForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="accent username-submit">Start Chatting</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+<div id="chat-page" class="hidden">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Spring Websocket Project - by Jafar Hussein</h2>
+        </div>
+        <div class="connecting">
+            Connecting...
+        </div>
+        <ul id="messageArea">
+
+        </ul>
+        <form id="messageForm" name="messageFrom">
+            <div class="form-group">
+                <div class="input-group clearfix">
+                    <input type="text" id="message" placeholder="enter a message..." autocomplete="off" class="form-control" >
+                    <button type="submit" class="primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
